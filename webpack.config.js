@@ -1,23 +1,14 @@
 import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import { CleanWebpackPlugin } from "clean-webpack-plugin";
 
 const __dirname = path.resolve();
 
 const config = {
-  mode: "development",
   entry: "./src/index.tsx",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
-  },
-  devtool: "inline-source-map",
-  devServer: {
-    static: {
-      directory: path.join(__dirname, "dist"),
-    },
-    hot: true,
-    compress: true,
-    port: 9000,
+    filename: "bundle.[contenthash].js",
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -28,6 +19,7 @@ const config = {
         minifyJS: true,
       },
     }),
+    new CleanWebpackPlugin(),
   ],
   module: {
     rules: [

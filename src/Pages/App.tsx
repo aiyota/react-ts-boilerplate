@@ -4,7 +4,7 @@ import Heading from "../Components/Heading";
 
 const App = () => (
   <>
-    <Heading text={"Hello"} />
+    <Heading text={"My React TS App"} />
 
     <BodyParagraph
       text={`Lorem ipsum dolor sit, 
