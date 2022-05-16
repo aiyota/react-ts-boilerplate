@@ -63,3 +63,8 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+.container {
+  margin: auto;
+  max-width: 800px;
+}
