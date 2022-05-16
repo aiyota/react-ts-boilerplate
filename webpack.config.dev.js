@@ -1,7 +1,5 @@
 import path from "path";
-import configBase from "./webpack.config.js";
-
-const __dirname = path.resolve();
+import configBase, { __dirname } from "./webpack.config.js";
 
 const config = {
   ...configBase,

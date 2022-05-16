@@ -2,7 +2,7 @@ import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import { CleanWebpackPlugin } from "clean-webpack-plugin";
 
-const __dirname = path.resolve();
+export const __dirname = path.resolve();
 
 const config = {
   entry: "./src/index.tsx",
