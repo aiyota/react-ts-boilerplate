@@ -2,11 +2,12 @@ import React from "react";
 import BodyParagraph from "../Components/BodyParagraph";
 import Container from "../Components/Container";
 import Heading from "../Components/Heading";
+import bunnyImg from "../img/bunny.jpg";
 
 const App = () => (
   <Container>
     <Heading text={"My React TS App"} />
-
+    <img src={bunnyImg}></img>
     <BodyParagraph
       text={`Lorem ipsum dolor sit, 
         amet consectetur adipisicing elit. Iusto veritatis autem dignissimos nam aut est? 
