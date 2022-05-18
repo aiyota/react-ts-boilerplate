@@ -1,5 +1,7 @@
 import React from "react";
 
-const BodyParagraph = ({ text }: { text: string }) => <p>{text}</p>;
+const BodyParagraph = ({ text }: BodyParagraphProps) => <p>{text}</p>;
+
+type BodyParagraphProps = { text: string };
 
 export default BodyParagraph;

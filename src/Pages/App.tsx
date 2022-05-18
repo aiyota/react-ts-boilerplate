@@ -1,19 +1,20 @@
 import React from "react";
-import BodyParagraph from "../Components/BodyParagraph";
-import Container from "../Components/Container";
-import Heading from "../Components/Heading";
-import bunnyImg from "../img/bunny.jpg";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./About/About";
+import ContactUs from "./ContactUs/ContactUs";
+import Home from "./Home/Home";
+import NotFound from "./NotFound/NotFound";
 
 const App = () => (
-  <Container>
-    <Heading text={"My React TS App"} />
-    <img src={bunnyImg}></img>
-    <BodyParagraph
-      text={`Lorem ipsum dolor sit, 
-        amet consectetur adipisicing elit. Iusto veritatis autem dignissimos nam aut est? 
-        Dolorem optio maxime aut tempore.`}
-    />
-  </Container>
+  <BrowserRouter>
+    <Routes>
+      <Route path="*" element={<NotFound />} />
+
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact-us" element={<ContactUs />} />
+    </Routes>
+  </BrowserRouter>
 );
 
 export default App;
