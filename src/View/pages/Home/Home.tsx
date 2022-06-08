@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import BodyParagraph from "../../components/BodyParagraph";
 import Container from "../../components/Container";
 import Heading from "../../components/Heading";
 import Navbar from "../../components/Navbar";
-import bunnyImg from "../../img/bunny.jpg";
+import bunnyImg from "../../../img/bunny.jpg";
 
 const Home = () => (
   <Container>

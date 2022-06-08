@@ -1,4 +1,4 @@
-import { CSSClasses } from "../../ts/types";
+import { CSSClasses } from "../../../ts/types";
 
 const contactUsStyle: CSSClasses = {
   label: {

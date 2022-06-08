@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import About from "./About/About";
-import ContactUs from "./ContactUs/ContactUs";
-import Home from "./Home/Home";
-import NotFound from "./NotFound/NotFound";
+import About from "./pages/About/About";
+import ContactUs from "./pages/ContactUs/ContactUs";
+import Home from "./pages/Home/Home";
+import NotFound from "./pages/NotFound/NotFound";
 
 const App = () => (
   <BrowserRouter>
