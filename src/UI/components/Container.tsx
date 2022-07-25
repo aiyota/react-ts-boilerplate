@@ -1,5 +1,5 @@
 import React from "react";
-import { Children } from "../ts/types";
+import { Children } from "../../ts/types";
 
 const Container = ({ children }: ContainerProps) => (
   <div className="container">{children}</div>
